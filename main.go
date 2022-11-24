@@ -276,6 +276,7 @@ func GetDataFromRedis(w http.ResponseWriter, r *http.Request) {
 				println("Its true i need to put data in one", myd1)
 				json.Set(myd1, q)
 			}
+
 		}
 	}
 	// typeSwitchFunc(num)
@@ -291,7 +292,7 @@ func GetDataFromRedis(w http.ResponseWriter, r *http.Request) {
 	// 	json.Set("Someda"+strconv.Itoa(i), "aaa"+strconv.Itoa(i))
 	// 	println(i)
 	// }
-	json.Set("foo2", "bar2")
+	// json.Set("foo2", "bar2")
 	payload, _ := json.MarshalJSON()
 	// if err {
 	// 	fmt.Printf(err)
